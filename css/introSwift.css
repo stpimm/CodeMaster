@@ -1,0 +1,306 @@
+@font-face{
+    font-family: SpaceGrotesk-Regular;
+    src: url(../assets/Font/SpaceGrotesk-Regular.ttf);
+}
+
+@font-face{
+    font-family: SpaceGrotesk-Bold;
+    src: url(../assets/Font/SpaceGrotesk-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav img {
+    padding-bottom: 2px;
+    width: 120px;
+    height: 120px;
+    float: left !important;
+}
+
+nav {
+    z-index: 10000;
+    height: 65px;
+    display: flex;
+    background-color: rgb(239, 246, 252);
+    padding: 0 4vw;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0px;
+    float: right;
+}
+
+nav ul li {
+    padding-top: 4px;
+    list-style: none;
+}
+
+nav ul li a {
+    /* letter-spacing: 0px; */
+    margin-left: 2vw;
+    font-family: SpaceGrotesk-Regular;
+    font-size: 13px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: black;
+}
+
+nav ul a:hover {
+    color:#5b71f1;
+    border-bottom: 2px solid #5b71f1;
+    transition: 0.15s ease-in-out;
+}
+
+nav a.button {
+    font-family: SpaceGrotesk-Bold;
+    border: 2px solid #485019;
+    background-color: #E7FF57;
+    border-radius: 5px;
+    padding: 3px 6px;
+    /* padding-bottom: 1.5px; */
+    color: #000000 !important;
+}
+
+.active {
+    color: black;
+    border-bottom: 2px solid #5b71f1;
+    width: 100%;
+}
+
+nav a.button:hover {
+    background-color: #5b71f1;
+    border: 2px solid #5b71f1;
+    transition: 0.2s ease-in-out;
+    color: #ffffff !important;
+}
+/* End Navbar */
+
+/* Body */
+section.header{
+    padding: 30px 100px;
+}
+.header ul {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.header ul li {
+    list-style: none;
+    transition: 0.5s;
+}
+
+.header ul li a {
+    /* letter-spacing: 0px; */
+    margin-left: 2vw;
+    font-family: SpaceGrotesk-Bold;
+    font-size: 15px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: black;
+}
+
+.header .active{
+    color: #000000;
+    background-color: #8495f7;
+    opacity: 70%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    
+}
+
+.header li:hover {
+    transform: scale(1.05);
+    transition: all in 0.5s;
+}
+
+.content {
+    text-align: center;
+    padding: 50px 100px;
+}
+
+.content h2 {
+    font-family: SpaceGrotesk-Bold;
+    font-size: 30px;
+}
+
+.content h4 {
+    font-family: SpaceGrotesk-Regular;
+    font-size: 14px;
+    padding: 10px 60px;
+}
+
+.bigcontainer{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.join-us {
+    font-family: SpaceGrotesk-Bold;
+    font-size: 30px;
+    padding: 20px 60px;
+    background-color: #E7FF57;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Video */
+
+.video {
+    overflow-x: hidden;
+    height: 700px;
+    width: 1200px;
+}
+
+.you-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    padding: 15px 50px;
+}
+
+/* Card */
+.title{
+    font-family: SpaceGrotesk-Bold;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+section.package {
+    padding: 0px 70px 100px;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2px;
+}
+.card {
+    width: 90%;
+    padding: 15px 20px;
+    padding-bottom: 15px;
+    border-bottom: #000000 2px solid;
+    transition: 1s;
+    text-decoration: none;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card h3 {
+    padding: 0px 0px 10px;
+    text-align: left;
+    font-family: SpaceGrotesk-Bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.card p {
+    font-family: SpaceGrotesk-Regular;
+    font-size: 12px;
+}
+
+.card ul h4 {
+    font-family: SpaceGrotesk-Bold;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.card ul a {
+    font-family: SpaceGrotesk-Bold;
+    text-decoration: none;
+    background-color: #5D12D0;
+    color: white;
+    padding: 5px 8px !important;
+    border-radius: 5px;
+    
+}
+
+.card a.button:hover {
+    background-color: #5b71f1;
+    transition: 0.2s ease-in-out;
+    color: #ffffff !important;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px #d8d8d8 ;
+    transition: all 0.2s ease-in-out;
+}
+/* End Card */
+
+.package .button {
+    /* border: 1px solid black; */
+    width: 50%;
+    display:grid;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button p {
+    font-family: SpaceGrotesk-Bold;
+    background-color: #E7FF57;
+    border-radius: 5px;
+    padding: 3px 6px;
+    /* padding-bottom: 1.5px; */
+    color: #000000 !important;
+}
+
+.button p:hover {
+    background-color: #5b71f1;
+    transition: 0.2s ease-in-out;
+    color: #ffffff !important;
+}
+
+/* Footer */
+
+footer {
+    max-height: 30%;
+    display: flex;
+    background-color:#E7FF57;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    bottom: 0;
+}
+
+footer h4 {
+    font-family: SpaceGrotesk-Regular;
+    font-size: 12px;
+    max-width: 50%;
+}
+
+footer img {
+    /* border: 2px solid black; */
+    width: 100px;
+    height: 50px;
+    object-fit:cover;
+}

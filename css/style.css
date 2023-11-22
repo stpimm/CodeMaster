@@ -1,0 +1,240 @@
+@font-face{
+    font-family: SpaceGrotesk-Regular;
+    src: url(../assets/Font/SpaceGrotesk-Regular.ttf);
+}
+
+@font-face{
+    font-family: SpaceGrotesk-Bold;
+    src: url(../assets/Font/SpaceGrotesk-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav img {
+    padding-bottom: 2px;
+    width: 120px;
+    height: 120px;
+    float: left !important;
+}
+
+nav {
+    z-index: 10000;
+    height: 65px;
+    display: flex;
+    background-color: rgb(239, 246, 252);
+    padding: 0 4vw;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0px;
+    float: right;
+}
+
+nav ul li {
+    padding-top: 4px;
+    list-style: none;
+}
+
+nav ul li a {
+    /* letter-spacing: 0px; */
+    margin-left: 2vw;
+    font-family: SpaceGrotesk-Regular;
+    font-size: 13px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: black;
+}
+
+nav ul a:hover {
+    color:#5b71f1;
+    border-bottom: 2px solid #5b71f1;
+    transition: 0.15s ease-in-out;
+}
+
+nav a.button {
+    font-family: SpaceGrotesk-Bold;
+    border: 2px solid #485019;
+    background-color: #E7FF57;
+    border-radius: 5px;
+    padding: 3px 6px;
+    /* padding-bottom: 1.5px; */
+    color: #000000 !important;
+}
+
+.active {
+    color: black;
+    border-bottom: 2px solid #5b71f1;
+    width: 100%;
+}
+
+nav a.button:hover {
+    background-color: #5b71f1;
+    border: 2px solid #5b71f1;
+    transition: 0.2s ease-in-out;
+    color: #ffffff !important;
+}
+/* End Navbar */
+
+/* Body */
+section.header{
+    padding: 100px;
+    /* border: 2px solid #A40A0A; */
+    font-family: SpaceGrotesk-Bold;
+    font-size: 27px;
+}
+
+.title {
+    border-left: 7px solid #E7FF57;
+    padding: 20px;
+}
+
+.language-logo{
+    display: flex;
+    float: right;
+    /* border: 2px solid #000000; */
+    justify-content: space-between;
+    margin-top: -100px;
+}
+
+.language-logo img {
+    max-width: 80%;
+    max-height: 80%;
+    padding: 20px;
+    align-items: left;
+    
+}
+
+section.promotion {
+    /* border: 2px solid #000000; */
+    padding: 100px;
+    background-color: #E7FF57;
+    padding-bottom: -100px;
+
+}
+.promotion h2 {
+    font-family: SpaceGrotesk-Bold;
+    font-size: 20px;
+    max-width: 50%;
+}
+
+.promotion p {
+    font-family: SpaceGrotesk-Regular;
+    max-width: 80%;
+}
+
+.promotion .container {
+    /* border: 2px solid #000000; */
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 60px;
+
+}
+
+.container .col {
+    padding: 10px;
+    align-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-sizing: border-box;
+
+}
+.container .col p {
+    padding-top: 7px;
+    font-size: 14px;
+}
+
+.promotion-title h1 {
+    margin-top: -50px;
+    margin-bottom: 30px;
+    font-family: SpaceGrotesk-Bold;
+    text-align: center;
+    font-size: 25px;
+}
+
+section.join {
+    height: 30%;
+    padding: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.join h2 {
+    font-family: SpaceGrotesk-Bold;
+}
+
+.join h3 {
+    font-family: SpaceGrotesk-Regular;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+
+.join a.button:hover {
+    border: 2px solid #A40A0A;
+    color:#5b71f1;
+}
+
+.join a.button {
+    text-decoration: none;
+    font-family: SpaceGrotesk-Bold;
+    border: 2px solid #485019;
+    background-color: #E7FF57;
+    border-radius: 5px;
+    padding: 6px 10px;
+    /* padding-bottom: 1.5px; */
+    color: #000000 !important;
+}
+
+.join a.button:hover {
+    background-color: #5b71f1;
+    border: 2px solid #5b71f1;
+    transition: 0.2s ease-in-out;
+    color: #ffffff !important;
+}
+
+/* Footer */
+footer {
+    max-height: 30%;
+    display: flex;
+    background-color:#E7FF57;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    bottom: 0;
+}
+
+footer h4 {
+    font-family: SpaceGrotesk-Regular;
+    font-size: 12px;
+    max-width: 50%;
+}
+
+footer img {
+    /* border: 2px solid black; */
+    width: 100px;
+    height: 50px;
+    object-fit:cover;
+}
