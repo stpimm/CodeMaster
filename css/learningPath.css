@@ -31,7 +31,7 @@ nav {
     z-index: 10000;
     height: 65px;
     display: flex;
-    background-color: rgb(239, 246, 252);
+    background-color: white;
     padding: 0 4vw;
     justify-content: space-between;
     align-items: center;
@@ -62,8 +62,8 @@ nav ul li a {
 }
 
 nav ul a:hover {
-    color:#5b71f1;
-    border-bottom: 2px solid #5b71f1;
+    color:#5D12D0;
+    border-bottom: 1px solid #5D12D0;
     transition: 0.15s ease-in-out;
 }
 
@@ -79,13 +79,13 @@ nav a.button {
 
 .active {
     color: black;
-    border-bottom: 2px solid #5b71f1;
+    border-bottom: 2px solid #5D12D0;
     width: 100%;
 }
 
 nav a.button:hover {
-    background-color: #5b71f1;
-    border: 2px solid #5b71f1;
+    background-color: #5D12D0;
+    border: 2px solid #5D12D0;
     transition: 0.2s ease-in-out;
     color: #ffffff !important;
 }
