@@ -117,12 +117,26 @@ section.header{
 }
 
 .header .active{
-    color: #000000;
-    background-color: #8495f7;
-    opacity: 70%;
+    color: white;
+    background-color: #5D12D0;
+    opacity: 100%;
     padding: 8px 12px;
     border-radius: 6px;
     
+}
+.header ul li a:hover {
+    /* letter-spacing: 0px; */
+    margin-left: 2vw;
+    font-family: SpaceGrotesk-Bold;
+    font-size: 15px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: white;
+    background-color: #5D12D0;
+    opacity: 100%;
+    padding: 8px 5px;
+    border-radius: 6px;
+    transition: all in 0.5s;
 }
 
 .header li:hover {
